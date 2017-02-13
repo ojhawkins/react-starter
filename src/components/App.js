@@ -7,12 +7,12 @@ class App extends React.Component {
                 <p>Header here...</p>
                 {this.props.children}
             </div>
-        )
+        );
     }
 }
 
-App.prototype = {
+App.propTypes = {
     children: PropTypes.object.isRequired
-}
+};
 
 export default App;
